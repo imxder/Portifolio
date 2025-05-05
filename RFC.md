@@ -1,68 +1,76 @@
-# RFC - Alexandre Salgado
+# Capa
 
-## Título do Projeto
-**Ainda não definido**
+- **Título do Projeto**
+- **Ainda não definido**
+- **Nome do Estudante:** Alexandre Salgado  
+- **Curso:** Engenharia de Software  
+- **Data de Entrega:** 31/03/2025  
 
-**Nome do Estudante:** Alexandre Salgado  
-**Curso:** Engenharia de Software  
-**Data de Entrega:** 31/03/2025  
+# Resumo
 
----
+ Este projeto tem como objetivo desenvolver um aplicativo mobile em Flutter, para facilitar
+ a interação entre tutores de pets e promover a adoção e o reencontro de animais perdidos. A
+ plataforma contará com três funcionalidades principais: uma rede social exclusiva para cães e 
+ gatos, uma aba para adoção de pets e uma seção para publicação de animais desaparecidos,
+ permitindo o fornecimento de informações adicionais de contato. O aplicativo oferecerá um
+ sistema de cadastro no qual os usuários poderão registrar seus animais, informando raça, foto
+ de perfil, data de nascimento e localização. A arquitetura do sistema será baseada no Firebase
+ Firestore para armazenamento de dados e Firebase Storage para upload de imagens. O projeto
+ busca criar uma solução acessível e intuitiva para conectar amantes de pets, contribuindo para
+ o bem-estar animal e a redução do abandono.
 
-## Resumo
+## 1. Introdução
 
-Este projeto tem como objetivo desenvolver um aplicativo mobile em **Flutter**, para facilitar a interação entre tutores de pets e promover a adoção e o reencontro de animais perdidos. A plataforma contará com três funcionalidades principais:
+- **Contexto**: A adoção de animais e o reencontro de pets perdidos são desafios comuns
+enfrentados por tutores e organizações de bem-estar animal. Muitas iniciativas utilizam
+redes sociais convencionais para esses propósitos, mas não há um ambiente dedicado
+exclusivamente para essa finalidade. A ausência de uma plataforma especializada
+dificulta a conexão entre adotantes e doadores, bem como a localização rápida de
+animais desaparecidos.
 
-1. Uma rede social exclusiva para cães e gatos;
-2. Uma aba para adoção de pets;
-3. Uma seção para publicação de animais desaparecidos, com informações adicionais de contato.
+- **Justificativa**: O desenvolvimento deste aplicativo se justifica pela necessidade de uma
+ferramenta centralizada que facilite a interação entre tutores de animais, promovendo a
+adoção responsável e auxiliando na busca por pets perdidos. No campo da engenharia
+de software, o projeto se destaca pelo uso de tecnologias modernas, como Flutter e
+Firebase, oferecendo uma solução eficiente e escalável para um problema social
+relevante.
 
-Será utilizado **Firebase Firestore** para armazenamento de dados e **Firebase Storage** para upload de imagens. O aplicativo visa conectar amantes de pets e contribuir para a redução do abandono animal.
+- **Objetivos**: O objetivo principal do projeto é criar um aplicativo intuitivo e funcional que
+conecte donos de animais, interessados em adoção e pessoas que buscam reencontrar
+seus pets perdidos. Como objetivos secundários, destacam-se:
 
----
+  - Implementar um sistema de cadastro que permita aos usuários registrar informações sobre seus pets.
+  - Criar uma rede social restrita a publicações relacionadas a cães e gatos.
+  - Desenvolver uma aba dedicada à adoção de animais.
+  - Disponibilizar uma seção para publicação de animais desaparecidos, incluindo
+informações adicionais para contato.
 
-## Introdução
 
-### Contexto
+## 2. Descrição do Projeto
 
-A adoção de animais e o reencontro de pets perdidos são desafios enfrentados por tutores e ONGs. Hoje, a maioria das iniciativas acontece em redes sociais convencionais, que não são ideais para esse fim.
+- **Tema do Projeto**: O projeto consiste no desenvolvimento de um aplicativo mobile em
+Flutter, utilizando Firebase para gerenciamento de banco de dados e armazenamento de
+imagens. O app será uma plataforma voltada exclusivamente para cães e gatos,
+oferecendo uma rede social onde os donos podem postar fotos de seus pets, além de
+contar com funcionalidades voltadas para adoção e localização de animais perdidos. A
+proposta é criar um ambiente interativo e útil para os amantes de pets, promovendo a
+adoção responsável e facilitando o reencontro de animais desaparecidos.
 
-### Justificativa
+- **Problemas a Resolver**:
+  - Dificuldade na comunicação entre adotantes e doadores de animais.
+  - Falta de uma plataforma exclusiva para donos de pets compartilharem fotos deseus animais.
+  - Falta de uma ferramenta centralizada para publicação e busca de animais perdidos.
+  - Dificuldade em encontrar pets desaparecidos ou disponíveis para adoção próximos à localização do usuário.
 
-A proposta é desenvolver uma ferramenta especializada que promova a adoção responsável e facilite a busca por animais desaparecidos, utilizando tecnologias modernas e escaláveis como Flutter e Firebase.
-
-### Objetivos
-
-#### Objetivo Geral
-Criar um aplicativo intuitivo e funcional que conecte donos de animais, adotantes e pessoas que buscam reencontrar seus pets perdidos.
-
-#### Objetivos Específicos
-- Implementar sistema de cadastro de pets.
-- Criar uma rede social para cães e gatos.
-- Desenvolver uma aba para adoção.
-- Adicionar uma seção para publicação de animais desaparecidos.
-
----
-
-## Descrição do Projeto
-
-### Tema do Projeto
-Desenvolvimento de um aplicativo mobile usando Flutter e Firebase, voltado exclusivamente para cães e gatos, com funcionalidades sociais, adoção e localização de pets desaparecidos.
-
-### Problemas a Resolver
-- Dificuldade de comunicação entre adotantes e doadores;
-- Ausência de plataforma social específica para pets;
-- Falta de ferramenta centralizada para localização de animais perdidos;
-- Localização ineficiente de pets disponíveis ou desaparecidos.
-
-### Limitações
-- Restrito a cães e gatos;
-- Geolocalização baseada em dados manuais (sem GPS);
-- Sem verificação de autenticidade nas adoções, mas com:
-  - Termos de uso;
-  - Dicas de adoção segura.
-
----
+- **Limitações**:
+  - O aplicativo será restrito a cães e gatos, não abrangendo outros tipos de animais.
+  - A funcionalidade de geolocalização será baseada nos dados cadastrados pelos usuários
+  (cidade, estado, bairro), sem rastreamento em tempo real.
+  - Não será implementado um sistema de verificação de autenticidade para adoções,
+  ficando a responsabilidade para os usuários. Para minimizar riscos, o aplicativo contará com:
+    - Termos de uso e avisos informando que a adoção é de responsabilidade
+    dos usuários.
+    - Dicas de adoção segura, incentivando boas práticas.
 
 ## Especificação Técnica
 
@@ -85,7 +93,6 @@ Desenvolvimento de um aplicativo mobile usando Flutter e Firebase, voltado exclu
 - Feed com prioridade para postagens locais.
 - Sistema de denúncias para moderação.
 
----
 
 ## Requisitos de Software
 
@@ -104,12 +111,10 @@ Desenvolvimento de um aplicativo mobile usando Flutter e Firebase, voltado exclu
 - RNF03: Dados devem ser protegidos com autenticação e criptografia.
 - RNF04: Usar Firebase Firestore para escalabilidade.
 
----
 
 ## Representação dos Requisitos
 (UML de Casos de Uso – a ser inserida)
 
----
 
 ## Stack Tecnológica
 
