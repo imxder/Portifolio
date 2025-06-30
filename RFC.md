@@ -1,166 +1,166 @@
+
 # Capa
 
-- **Título do Projeto**
-- **Ainda não definido**
-- **Nome do Estudante:** Alexandre Salgado  
-- **Curso:** Engenharia de Software  
-- **Data de Entrega:** 31/03/2025  
+- **Título do Projeto**: A definir 
+- **Nome do Estudante**: Alexandre Salgado  
+- **Curso**: Engenharia de Software  
+- **Data de Entrega**: 07/06/2025  
 
 # Resumo
 
- Este projeto tem como objetivo desenvolver um aplicativo mobile em Flutter, para facilitar
- a interação entre tutores de pets e promover a adoção e o reencontro de animais perdidos. A
- plataforma contará com três funcionalidades principais: uma rede social exclusiva para cães e 
- gatos, uma aba para adoção de pets e uma seção para publicação de animais desaparecidos,
- permitindo o fornecimento de informações adicionais de contato. O aplicativo oferecerá um
- sistema de cadastro no qual os usuários poderão registrar seus animais, informando raça, foto
- de perfil, data de nascimento e localização. A arquitetura do sistema será baseada no Firebase
- Firestore para armazenamento de dados e Firebase Storage para upload de imagens. O projeto
- busca criar uma solução acessível e intuitiva para conectar amantes de pets, contribuindo para
- o bem-estar animal e a redução do abandono.
+Este projeto visa desenvolver um software interativo para auxílio no aprendizado e prática de violão, com foco em reconhecimento de acordes em tempo real. O sistema será multiplataforma (desktop e mobile), desenvolvido em Flutter, e contará com um backend em Python para processar os áudios via inteligência artificial. O aplicativo oferecerá partitura interativa, metrônomo visual/sonoro, braço de violão com digitações corretas, e feedback instantâneo sobre a precisão da execução. Elementos de gamificação (níveis, XP, desafios diários) serão incluídos para tornar o aprendizado mais engajador.
 
 ## 1. Introdução
 
-- **Contexto**: A adoção de animais e o reencontro de pets perdidos são desafios comuns
-enfrentados por tutores e organizações de bem-estar animal. Muitas iniciativas utilizam
-redes sociais convencionais para esses propósitos, mas não há um ambiente dedicado
-exclusivamente para essa finalidade. A ausência de uma plataforma especializada
-dificulta a conexão entre adotantes e doadores, bem como a localização rápida de
-animais desaparecidos.
+- **Contexto**: Aprender violão com precisão é um desafio comum para iniciantes. Ferramentas existentes oferecem suporte limitado em tempo real e pouca interatividade, o que compromete o progresso técnico de forma autônoma.
 
-- **Justificativa**: O desenvolvimento deste aplicativo se justifica pela necessidade de uma
-ferramenta centralizada que facilite a interação entre tutores de animais, promovendo a
-adoção responsável e auxiliando na busca por pets perdidos. No campo da engenharia
-de software, o projeto se destaca pelo uso de tecnologias modernas, como Flutter e
-Firebase, oferecendo uma solução eficiente e escalável para um problema social
-relevante.
+- **Justificativa**: A proposta preenche a lacuna por uma plataforma completa e interativa que ofereça feedback imediato, com funcionalidades didáticas integradas e recursos modernos de IA.
 
-- **Objetivos**: O objetivo principal do projeto é criar um aplicativo intuitivo e funcional que
-conecte donos de animais, interessados em adoção e pessoas que buscam reencontrar
-seus pets perdidos. Como objetivos secundários, destacam-se:
-
-  - Implementar um sistema de cadastro que permita aos usuários registrar informações sobre seus pets.
-  - Criar uma rede social restrita a publicações relacionadas a cães e gatos.
-  - Desenvolver uma aba dedicada à adoção de animais.
-  - Disponibilizar uma seção para publicação de animais desaparecidos, incluindo
-informações adicionais para contato.
-
+- **Objetivos**:
+  - Desenvolver um software multiplataforma para prática de violão com feedback inteligente.
+  - Implementar reconhecimento de acordes em tempo real com IA.
+  - Integrar partitura interativa, braço de violão virtual e metrônomo visual/sonoro.
+  - Estimular o engajamento com elementos de gamificação.
 
 ## 2. Descrição do Projeto
 
-- **Tema do Projeto**: O projeto consiste no desenvolvimento de um aplicativo mobile em
-Flutter, utilizando Firebase para gerenciamento de banco de dados e armazenamento de
-imagens. O app será uma plataforma voltada exclusivamente para cães e gatos,
-oferecendo uma rede social onde os donos podem postar fotos de seus pets, além de
-contar com funcionalidades voltadas para adoção e localização de animais perdidos. A
-proposta é criar um ambiente interativo e útil para os amantes de pets, promovendo a
-adoção responsável e facilitando o reencontro de animais desaparecidos.
-
+- **Tema do Projeto**: Tutor virtual de violão com IA para reconhecimento de acordes.
 - **Problemas a Resolver**:
-  - Dificuldade na comunicação entre adotantes e doadores de animais.
-  - Falta de uma plataforma exclusiva para donos de pets compartilharem fotos deseus animais.
-  - Falta de uma ferramenta centralizada para publicação e busca de animais perdidos.
-  - Dificuldade em encontrar pets desaparecidos ou disponíveis para adoção próximos à localização do usuário.
+  - Falta de feedback interativo durante a prática.
+  - Dificuldade em saber se o acorde está correto.
+  - Falta de motivação e acompanhamento do progresso.
 
 - **Limitações**:
-  - O aplicativo será restrito a cães e gatos, não abrangendo outros tipos de animais.
-  - A funcionalidade de geolocalização será baseada nos dados cadastrados pelos usuários
-  (cidade, estado, bairro), sem rastreamento em tempo real.
-  - Não será implementado um sistema de verificação de autenticidade para adoções,
-  ficando a responsabilidade para os usuários. Para minimizar riscos, o aplicativo contará com:
-    - Termos de uso e avisos informando que a adoção é de responsabilidade
-    dos usuários.
-    - Dicas de adoção segura, incentivando boas práticas.
+  - Reconhecimento limitado a acordes comuns.
+  - Sensível à qualidade do áudio.
+  - Partitura inicial em formato simplificado.
+
+- **Elementos de Gamificação**:
+  - Sistema de níveis e XP.
+  - Desafios diários.
+  - Conquistas e emblemas.
 
 ## Especificação Técnica
 
 ### Tecnologias
-- **Flutter** para o desenvolvimento do app.
-- **Firebase Firestore** para banco de dados.
-- **Firebase Storage** para imagens.
-- **Firebase Authentication** para login.
-- **Google Maps API** para localização.
+
+- **Frontend**: Flutter (Dart) – multiplataforma
+- **Backend**: Python com Flask
+- **IA**: TensorFlow/Keras, Librosa
+- **Comunicação**: HTTP/WebSockets
+- **Audio**: Plugins Flutter (`record`, `audio_stream`)
 
 ### Algoritmos e Protocolos
-- JWT para autenticação.
-- Feed dinâmico com base na localização (cidade, estado, bairro).
-- Sistema de denúncias com moderação automática.
+
+- CNN-LSTM para reconhecimento de acordes
+- Algoritmo de sincronização com metrônomo
+- Suavização de saída do modelo para estabilidade
 
 ### Funcionalidades
-- Cadastro de usuários e pets.
-- Upload de fotos.
-- Publicação de pets para adoção e desaparecidos.
-- Feed com prioridade para postagens locais.
-- Sistema de denúncias para moderação.
 
+- Captura e envio de áudio para backend
+- Partitura interativa com rolagem
+- Braço do violão com digitação e feedback
+- Metrônomo visual/sonoro
+- Feedback instantâneo
+- Gamificação (XP, níveis, desafios, conquistas)
 
 ## Requisitos de Software
 
-### Requisitos Funcionais
-- RF01: Criar conta e login.
-- RF02: Registrar pets (raça, idade, foto, localização).
-- RF03: Postar fotos dos pets.
-- RF04: Visualizar e interagir no feed.
-- RF05: Exibir no feed pets perdidos e para adoção.
-- RF06: Cadastrar pet para adoção ou desaparecido.
-- RF07: Denunciar postagens inadequadas.
+### Requisitos Funcionais (RF)
 
-### Requisitos Não Funcionais
-- RNF01: Compatível com Android e iOS.
-- RNF02: Feed deve carregar em menos de 3 segundos.
-- RNF03: Dados devem ser protegidos com autenticação e criptografia.
-- RNF04: Usar Firebase Firestore para escalabilidade.
+- RF01: Seleção de entrada de áudio
+- RF02: Captura e envio de chunks de áudio
+- RF03: Reconhecimento de acordes pelo backend
+- RF04: Carregamento e exibição de partitura
+- RF05: Feedback visual na partitura e braço do violão
+- RF06: Configuração de BPM
+- RF07: Feedback gamificado (XP, conquistas)
+- RF08: Notificações de progresso e desafios
 
+### Requisitos Não Funcionais (RNF)
+
+- RNF01: Compatibilidade com Windows, Android e iOS
+- RNF02: Latência de resposta inferior a 300ms
+- RNF03: Precisão de reconhecimento superior a 85%
+- RNF04: Interface intuitiva e responsiva
+- RNF05: Suporte a variações de áudio e técnicas de toque
 
 ## Representação dos Requisitos
-(UML de Casos de Uso – a ser inserida)
+
+```mermaid
+graph TD
+    Usuario([Usuário])
+
+    RF01[Selecionar fonte de áudio]
+    RF02[Capturar e enviar áudio]
+    RF03[Reconhecer acorde via backend]
+    RF04[Carregar partitura]
+    RF05[Exibir partitura interativa]
+    RF06[Configurar BPM do metrônomo]
+    RF07[Receber feedback visual e sonoro]
+    RF08[Notificações de progresso e desafios]
+    RF09[Exibir braço do violão e digitações]
+    RF10[Receber XP e conquistas]
+
+    Usuario --> RF01
+    Usuario --> RF02
+    Usuario --> RF03
+    Usuario --> RF04
+    Usuario --> RF05
+    Usuario --> RF06
+    Usuario --> RF07
+    Usuario --> RF08
+    Usuario --> RF09
+    Usuario --> RF10
+
+```
 
 
 ## Stack Tecnológica
 
 ### Linguagens
-- **Dart**
+
+- Dart (frontend)
+- Python (backend)
 
 ### Frameworks/Bibliotecas
+
 - Flutter
-- Firebase Authentication
-- Firebase Firestore
-- Firebase Storage
-- Google Maps API
+- Flask
+- TensorFlow/Keras
+- Librosa
+- NumPy
 
 ### Ferramentas
-- **Figma** – Prototipação de interfaces
-- **Visual Studio Code (VSCode)** – IDE
-- **GitHub** – Versionamento
-- **Trello** – Gestão de tarefas
 
----
+- VSCode
+- GitHub
+- Trello
+- Figma
 
 ## Considerações de Segurança
 
-- Autenticação via Firebase
-- Criptografia de dados
-- Sistema de moderação
-- Avisos sobre responsabilidade na adoção
-
----
+- Comunicação segura via HTTPS
+- Segurança na API Flask
+- Termos de uso claros
+- Robustez contra entradas inválidas
 
 ## Referências
 
 - [Flutter](https://flutter.dev)
-- [Firebase](https://firebase.google.com)
 - [Dart](https://dart.dev)
-- [Google Maps API](https://developers.google.com/maps)
-- [Figma](https://www.figma.com)
-- [Visual Studio Code](https://code.visualstudio.com)
+- [Flask](https://flask.palletsprojects.com)
+- [TensorFlow](https://www.tensorflow.org)
+- [Librosa](https://librosa.org)
+- [Songsterr](https://www.songsterr.com)
+- [VSCode](https://code.visualstudio.com)
 - [GitHub](https://github.com)
 - [Trello](https://trello.com)
 
 ---
 
 ## Avaliações dos Professores
-
-Adicionar páginas ao final com espaços para as considerações e assinaturas:
 
 - Considerações Professor(a):
 - Considerações Professor(a):
